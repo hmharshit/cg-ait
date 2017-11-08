@@ -44,7 +44,7 @@ int main()
     cout<<"Enter co-ordinates of center(x and y): ";
     cin>>x>>y;
     drawcircle(x, y, r);
-    delay(10000);
+    delay(10000); // to see the output
  
     return 0;
 }
