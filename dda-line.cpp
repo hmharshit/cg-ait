@@ -35,6 +35,7 @@ int main( )
         putpixel(x,y, 2);
         x=x+dx;
         y=y+dy;
+        delay(50);
  
     }
     delay(10000); 

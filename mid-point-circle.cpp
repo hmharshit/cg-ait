@@ -10,14 +10,16 @@ void drawcircle(int x0, int y0, int radius)
  
     while (x >= y)
     {
-    putpixel(x0 + x, y0 + y, 7);
-    putpixel(x0 + y, y0 + x, 7);
-    putpixel(x0 - y, y0 + x, 7);
-    putpixel(x0 - x, y0 + y, 7);
-    putpixel(x0 - x, y0 - y, 7);
-    putpixel(x0 - y, y0 - x, 7);
-    putpixel(x0 + y, y0 - x, 7);
-    putpixel(x0 + x, y0 - y, 7);
+    
+
+    putpixel(x0+x, y0+y, RED);
+    putpixel(x0-x, y0+y, RED);
+    putpixel(x0+x, y0-y, RED);
+    putpixel(x0-x, y0-y, RED);
+    putpixel(x0+y, y0+x, RED);
+    putpixel(x0-y, y0+x, RED);
+    putpixel(x0+y, y0-x, RED);
+    putpixel(x0-y, y0-x, RED);
  
     if (err <= 0)
     {
@@ -29,7 +31,7 @@ void drawcircle(int x0, int y0, int radius)
     {
         x -= 1;
         err -= 2*x + 1;
-    }
+    } 
     }
 }
  
